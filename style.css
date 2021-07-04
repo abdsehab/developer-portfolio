@@ -16,40 +16,12 @@ body{
     margin: 0;
 }
 
-/* Header Css */
-
-header{
-    background: url(images/top-banner.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-    display: flex;
-    justify-content: space-around;
-}
-
-header > *{
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.header-text-part{
-    width: 50%;
-    margin: 60px 100px ;
-    padding: 10px;
-}
-
 h1{
     font-size: 50px;
     line-height: 2em;
 }
 h3{
     margin: 20px 0px;
-}
-
-span{
-    color: #ffaf1d;
 }
 
 p{
@@ -68,9 +40,112 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
+/* Header Css */
+header{
+    background: url(images/top-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
+
+    display: flex;
+    justify-content: space-around;
+}
+header > *{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.header-text-part{
+    width: 50%;
+    margin: 60px 100px ;
+    padding: 10px;
+}
+span{
+    color: #ffaf1d;
+}
 
 .header-image{
     padding-top: 40px;
     margin-right: 30px;
+}
+/* 2nd Part  */
+
+#middle-part{
+    background: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 90%;
+    
+    margin: 30px;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ #middle-part > *{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+} 
+
+.body-img{
+    width: 50%;
+    
+}
+.body-text{
+    width: 50%;
+    margin-left: 50px ;
+    padding: 30px 10px 10px 25px;
+    
+}
+
+/* Experiences Area */
+#Experiences-area{
+    margin: 10% 0%;
+
+
+    background: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left 50%;
+}
+
+.experiences-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.experiences-box h1{
+    font-size: 35px;
+}
+
+.experiences-box h3{
+    color: #ffaf1d;
+}
+
+
+
+.experiences-box{
+    padding: 10px 20px;
+    width: 40%;
+    box-shadow: 10px 10px 30px gray;
+}
+
+.border-color-2{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1;
+}
+
+.border-color-1{
+    border-left: 7px solid #ff9a75;
+    border-image-slice: 1;
+}
+
+/* Footer Part */
+
+.footer{
+    margin: 10px 0px;
+    color: gray;
+    text-align: center;
 }
