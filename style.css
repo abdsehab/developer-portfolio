@@ -19,7 +19,38 @@ body{
 h1{
     font-size: 50px;
     line-height: 2em;
+    position: relative;
 }
+
+.header-text-part h1{
+    position: static;
+}
+
+/* H1 Hover Special Effect */
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255, 214, 138, 0.781);
+  z-index: -1;
+  transition: transform .5s ease;
+}
+
+
+/* H1 Hover Special Effects END */
+
 h3{
     margin: 20px 0px;
 }
@@ -131,6 +162,11 @@ span{
     box-shadow: 10px 10px 30px gray;
 }
 
+.experiences-box:hover{
+    background-color: rgba(255, 255, 255, 0.287);
+    
+}
+
 .border-color-2{
     border-left: 7px solid;
     border-image: linear-gradient(blue,cyan);
@@ -142,6 +178,7 @@ span{
     border-image-slice: 1;
 }
 
+
 /* Footer Part */
 
 .footer{
@@ -149,3 +186,4 @@ span{
     color: gray;
     text-align: center;
 }
+
