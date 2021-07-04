@@ -9,6 +9,9 @@
     width: 100%;
     height: auto;
 }
+img:hover{
+    zoom: 110%;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -71,12 +74,17 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
+ a:hover{
+     zoom: 120%;
+ }
+
 /* Header Css */
 header{
     background: url(images/top-banner.png);
     background-repeat: no-repeat;
     background-size: contain;
 
+    
 
     display: flex;
     justify-content: space-around;
@@ -99,6 +107,32 @@ span{
 .header-image{
     padding-top: 40px;
     margin-right: 30px;
+}
+
+header{
+    position: relative;
+}
+
+/* Social Media Icon */
+.social-media{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+.social-media ul li a{
+    color: whitesmoke;
+    background-image: linear-gradient(#ffaf1d, rgb(255, 137, 58));
+}
+.social-media ul li a:hover{
+    background-image: linear-gradient(#23c2e0, #379cf4);
+}
+
+/* .social-media ul li a:hover i{
+    color: black;
+} */
+
+.social-media ul li{
+    margin: 30px 0px;
 }
 /* 2nd Part  */
 
@@ -177,6 +211,7 @@ span{
     border-left: 7px solid #ff9a75;
     border-image-slice: 1;
 }
+
 
 
 /* Footer Part */
